@@ -10,6 +10,7 @@ const debug = util.debuglog("appserver");
 const config = require("./config");
 const handlers = require("./lib/handlers");
 const helpers = require("./lib/helpers");
+const cli = require("./lib/cli");
 
 const app = {};
 
@@ -159,3 +160,7 @@ app.router = {
   "order-page": handlers.orderPage,
   "checkout-order": handlers.checkoutOrder,
 };
+
+setTimeout(function() {
+  cli.init();
+}, 50);
