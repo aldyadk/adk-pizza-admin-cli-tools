@@ -1,0 +1,18 @@
+module.exports = {
+  httpPort: 3000,
+  httpsPort: 3001,
+  envName: "xxxxx",
+  hashingSecret: "xxxxxxxxx",
+  stripeApiKey: "xxxxxx",
+  mailgunApiKey: "xxxxxxx",
+  mailgunPath:
+    "/v3/sandboxxxxxxxxxxxxxxxxxxxxxxxxxxx.mailgun.org/messages",
+  mailgunSender:
+    "<postmaster@sandboxxxxxxxxxxxxxxxxxxxxxxxx.mailgun.org>",
+  templateGlobals: {
+    appName: "ADK PIZZA ONLINE ORDER",
+    companyName: "ADK PIZZA",
+    yearCreated: "2019",
+    baseUrl: "http://localhost:3000/",
+  },
+};
